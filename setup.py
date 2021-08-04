@@ -36,9 +36,9 @@ extensions = [
 
 setup(
     name="pyrvo2",
+    install_requires=["cython", "cmake"],
     ext_modules=cythonize(extensions),
     cmdclass={"build_ext": BuildRvo2Ext},
-    install_requires=["cython"],
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Intended Audience :: Developers",
